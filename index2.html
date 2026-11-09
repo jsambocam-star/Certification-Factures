@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture Certifiée – Sopres Groupe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0B1E36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px 25px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border-left: 5px solid #00FF88;
+        }
+        .logo { font-size: 48px; margin-bottom: 10px; }
+        .card h1 { color: #0B1E36; font-size: 22px; margin-bottom: 5px; }
+        .sub { color: #555; font-size: 14px; margin-bottom: 25px; }
+
+        .status {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            color: #155724;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .status small {
+            display: block;
+            font-weight: normal;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .invoice-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #00FF88;
+            color: #0B1E36;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+        }
+        .invoice-btn:hover {
+            background: #0B1E36;
+            color: #00FF88;
+            transform: translateY(-2px);
+        }
+
+        .info {
+            font-size: 13px;
+            color: #777;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .info span {
+            background: #0B1E36;
+            color: #00FF88;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .disclaimer {
+            font-size: 10px;
+            color: #aaa;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo">🛡️</div>
+    <h1>Sopres Groupe</h1>
+    <p class="sub">Facture Certifiée</p>
+
+    <div class="status">
+        ✅ Facture authentifiée
+        <small>Ce document a été émis par Sopres Groupe.</small>
+    </div>
+
+    <a class="invoice-btn"
+       href="FACTURE_STE_RITA.pdf"
+       target="_blank"
+       rel="noopener">
+        📄 Voir la facture
+    </a>
+
+    <div class="info">
+        <span>CERTIFIÉE</span> – https://jsambocam-star.github.io/Certification-Factures/
+    </div>
+
+    <p class="disclaimer">
+        Démonstration technique — Ce système n'a aucune valeur légale.
+    </p>
+</div>
+
+</body>
+</html>
